@@ -63,11 +63,13 @@
                                     </div>
                                 </body>
                                 </html>';
-                        $result = @mail($to, $subject, $message, $headers);
+                        غيري اسم المتعير الي في السطر التالي
+                        $result2 = @mail($to, $subject, $message, $headers);
                     
                         // echo '<script>alert("Email sent successfully !")</script>';
                         // echo '<script>window.location.href="index.php";</script>';
-                        if(true){
+                        الجملة في السطر التالي المفروض تتاكد من المتغير الي فوق فغيريها من ترو الى قيمة المتغير الي فوق
+                        if($result2){
                             $_SESSION["mail_messages"]="A reset message was sent to your registered email..\nPlease check your email";
                             $conn->close();
                             header('location:password_reset.php');
